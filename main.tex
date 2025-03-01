@@ -1,0 +1,148 @@
+% Academic CV LaTeX Template
+% Author: Ye Zheng, https://zhengyeah.com
+% Based on Dubasi Pavan Kumar's template, https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+
+\documentclass[a4paper,11pt]{article}
+
+%%%%%%%% PACKAGES  %%%%%%%%
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage{ulem}
+%%%%%%%% END PACKAGES  %%%%%%%%
+
+%%%%%%%% CONFIGURATION  %%%%%%%%
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=false}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule]
+
+
+
+% List formatting
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+% Commands for icon sizing and positioning
+\newcommand{\topicon}[1]{\raisebox{0.01em}{\resizebox{!}{0.7em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+%%%%%%%% END CONFIGURATION  %%%%%%%%
+
+\begin{document}
+\headerfontiii
+
+%%%%%%%% HEADER  %%%%%%%%
+\begin{center}
+    {\Huge\textbf{YE ZHENG}}
+\end{center}
+\vspace{-3mm}
+
+\begin{center}
+  \small{Ph.D. candidate in Computer Science, Rochester Institute of Technology (RIT)}
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{\topicon{\faGlobe} \href{https://zhengyeah.com}{zhengyeah.com} | 
+    \topicon{\faMailBulk} \href{mailto:zhengye.cn@gmail.com}{zhengye.cn@gmail.com}}
+\end{center}
+%%%%%%%% END HEADER  %%%%%%%%
+
+\section{\textbf{Education}}
+
+\begin{itemize}[leftmargin=0pt,label={}]
+    \item \textbf{Rochester Institute of Technology}{ \scriptsize (Rochester, USA)} \hfill Sep 2023 -- Present\vspace{-0.5em}    
+    \begin{itemize}
+      \item Ph.D. cancidate in Computer Science, advised by Dr. Yidan Hu
+      \item Research Topics: Differential Privacy (Randomized Algorithms)
+    \end{itemize}
+    \item \textbf{Shenzhen University}{ \scriptsize (Shenzhen, China)} \hfill Sep 2020 -- Jun 2023\vspace{-0.5em}
+    \begin{itemize}
+      \item M.S. in Software Engineering, advised by Dr. Jiaxiang Liu
+      \item Research Topics: Neural Network Verification (Formal Methods)
+    \end{itemize}
+    \item \textbf{Henan University}{ \scriptsize (Kaifeng, China)} \hfill Sep 2016 -- Jun 2020\vspace{-0.5em}
+    \begin{itemize}
+      \item B.S. in Mathematics, advised by Prof. Zhonghua Wang
+      \item Major: Pure Mathematics
+    \end{itemize}
+\end{itemize}
+
+
+\section{\textbf{Publications}}
+
+\begin{enumerate}[leftmargin=*,labelsep=2mm]
+  \setcounter{enumi}{5} % Set the starting value
+  \addtocounter{enumi}{-1}
+  \item \textbf{[PETS'25]} Locally Differentially Private Frequency Estimation via Joint Randomized Response \\
+  \uline{Ye Zheng}, Shafizur Rahman Seeam, Yidan Hu, Rui Zhang, and Yanchao Zhang
+  \addtocounter{enumi}{-2}
+  \item \textbf{[CNS'24]} Multi-sensor Data Privacy Protection with Adaptive Privacy Budget for IoT Systems \\
+  Xinyi Liu, \uline{Ye Zheng}, Zhengxiong Li, and Yidan Hu
+  \addtocounter{enumi}{-2}
+  \item \textbf{[SAS'23]} Boosting Multi-neuron Convex Relaxation for Neural Network Verification \\
+  Xuezhou Tang, \uline{Ye Zheng}, and Jiaxiang Liu
+  \addtocounter{enumi}{-2}
+  \item \textbf{[FSE'22 Demonstration track]} MpBP: Verifying Robustness of Neural Networks with Multi-path Bound Propagation \\
+  \uline{Ye Zheng}, Jiaxiang Liu, and Xiaomu Shi
+  \addtocounter{enumi}{-2}
+  \item \textbf{[JOS'22]} Multi-path Back-propagation Method for Neural Network Verification (recommended to IJSI'22)\\
+  \uline{Ye Zheng}, Xiaomu Shi, and Jiaxiang Liu
+\end{enumerate}
+
+
+\section{\textbf{Selected Awards}}
+
+\begin{itemize}[leftmargin=0pt,label={}]
+  \item Outstanding Graduate, Shenzhen University \hfill Jun 2023\vspace{-0.5em}
+  \item National Scholarship, Ministry of Education, China \hfill Sep 2022
+\end{itemize}
+
+
+\section{\textbf{Service}}
+
+\begin{itemize}[leftmargin=0pt,label={}]
+  \item \textbf{Reviewer:} TASE'23 (Theoretical Aspects of Software Engineering), and SAS'24 (Static Analysis Symposium)
+\end{itemize}
+
+\end{document}
