@@ -12,6 +12,7 @@
 \usepackage{geometry}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
 \usepackage{graphicx}
 \usepackage{fontawesome5}
 \usepackage{ulem}
@@ -23,11 +24,11 @@
 % Page layout
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyfoot[C]{\hspace{3.4cm} \thepage\ / \pageref{LastPage}} % Centered page numbers
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=1.4cm, right=1.4cm, bottom=1.6cm}
-\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+\geometry{left=1.4cm, top=1.6cm, right=1.4cm, bottom=2cm}
+\setlength{\footskip}{14pt} % Addressing fancyhdr warning
 % Hyperlink setup (moved after fancyhdr to address warning)
 \usepackage[hidelinks]{hyperref}
 \hypersetup{colorlinks=false}
@@ -78,24 +79,24 @@
 \section{\textbf{Research Experience}}
 
 I focus on the design and analysis of foundational algorithms. 
-Over the past five years, my research has spanned AI-driven theorem proving, formal privacy, and formal safety.
+Over the past five years, my research has spanned AI-driven knowledge discovery, formal privacy, and formal safety.
 
 \section{\textbf{Education}}
 
 \begin{itemize}[leftmargin=0pt,label={}]
     \item \textbf{Rochester Institute of Technology}{ \scriptsize (Rochester, USA)} \hfill Sep 2023 -- Present\vspace{-0.5em}    
     \begin{itemize}
-      \item Ph.D. candidate in Computer Science, advised by Dr. Yidan Hu
+      \item Ph.D. candidate in Computer Science, advised by Dr. \href{https://yidanhu.csec.rit.edu/}{Yidan Hu}
       \item Research Topics: AI for Math, Differential Privacy (Formal Privacy)
     \end{itemize}
     \item \textbf{Shenzhen University}{ \scriptsize (Shenzhen, China)} \hfill Sep 2020 -- Jun 2023\vspace{-0.5em}
     \begin{itemize}
-      \item M.S. in Software Engineering, advised by Dr. Jiaxiang Liu
+      \item M.S. in Software Engineering, advised by Dr. \href{https://csse.szu.edu.cn/pages/user/index?id=1031}{Jiaxiang Liu}
       \item Research Topics: Neural Network Verification (Formal Verification)
     \end{itemize}
     \item \textbf{Henan University}{ \scriptsize (Kaifeng, China)} \hfill Sep 2016 -- Jun 2020\vspace{-0.5em}
     \begin{itemize}
-      \item B.S. in Mathematics, advised by Dr. Zhonghua Wang
+      \item B.S. in Mathematics, advised by Dr. \href{https://maths.henu.edu.cn/info/1204/3593.htm}{Zhonghua Wang}
       \item Major: Pure Mathematics
     \end{itemize}
 \end{itemize}
