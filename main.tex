@@ -27,8 +27,8 @@
 \fancyfoot[C]{\hspace{3.4cm} \thepage\ / \pageref{LastPage}} % Centered page numbers
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=1.6cm, right=1.4cm, bottom=2cm}
-\setlength{\footskip}{14pt} % Addressing fancyhdr warning
+\geometry{left=1.4cm, top=1.6cm, right=1.4cm, bottom=2.8cm}
+\setlength{\footskip}{1.2cm} % Space between the bottom of the text and the footer
 % Hyperlink setup (moved after fancyhdr to address warning)
 \usepackage[hidelinks]{hyperref}
 \hypersetup{colorlinks=false}
@@ -64,12 +64,12 @@
 \begin{center}
     {\Huge\textbf{\scshape Ye Zheng}}
 \end{center}
-\vspace{-3mm}
+\vspace{-1mm}
 
 \begin{center}
   \small{Ph.D. candidate in Computer Science, Rochester Institute of Technology (RIT)}
 \end{center}
-\vspace{-6mm}
+\vspace{-4mm}
 \begin{center}
     \small{\topicon{\faGlobe} \href{https://zhengyeah.com}{zhengyeah.com} | 
     \topicon{\faMailBulk} \href{mailto:zhengye.cn@gmail.com}{zhengye.cn@gmail.com}}
@@ -79,7 +79,7 @@
 \section{\textbf{Research Experience}}
 
 I focus on the design and analysis of foundational algorithms. 
-Over the past five years, my research has spanned AI-driven knowledge discovery, formal privacy, and formal safety.
+Over the past five years, my research has spanned formal privacy and formal safety.
 
 \section{\textbf{Education}}
 
@@ -87,7 +87,7 @@ Over the past five years, my research has spanned AI-driven knowledge discovery,
     \item \textbf{Rochester Institute of Technology}{ \scriptsize (Rochester, USA)} \hfill Sep 2023 -- Present\vspace{-0.5em}    
     \begin{itemize}
       \item Ph.D. candidate in Computer Science, advised by Dr. \href{https://yidanhu.csec.rit.edu/}{Yidan Hu}
-      \item Research Topics: AI for Science, Differential Privacy (Formal Privacy)
+      \item Research Topics: AI Privacy, Differential Privacy (Formal Privacy)
     \end{itemize}
     \item \textbf{Shenzhen University}{ \scriptsize (Shenzhen, China)} \hfill Sep 2020 -- Jun 2023\vspace{-0.5em}
     \begin{itemize}
@@ -102,27 +102,40 @@ Over the past five years, my research has spanned AI-driven knowledge discovery,
 \end{itemize}
 
 
-\section{\textbf{Publications} \textnormal{\scriptsize (1st-author then co-author)}}
+\section{\textbf{Publications} \textnormal{\scriptsize (1st-author then co-author; full list at \href{https://scholar.google.com/citations?user=XXXX}{Google Scholar})}}
+
+{\scriptsize Preprints:} 
 
 \begin{enumerate}[leftmargin=*,labelsep=2mm]
+  \item \textsc{AudAgent}: Automated Auditing of Privacy Policy Compliance in AI Agents \topicon{\faFilePdf[regular]} \\
+  \uline{Ye Zheng}, Yidan Hu
+  \item \href{https://arxiv.org/pdf/2507.02727}{Quantifying Classifier Utility under Local Differential Privacy \topicon{\faFilePdf[regular]}} \\
+  \uline{Ye Zheng}, Yidan Hu
+  \item \href{https://arxiv.org/pdf/2412.00620}{TraCS: Trajectory Collection in Continuous Space under Local Differential Privacy \topicon{\faFilePdf[regular]}} \\
+  \uline{Ye Zheng}, Yidan Hu
+\end{enumerate}
+
+{\scriptsize Published papers:} 
+
+\begin{enumerate}[leftmargin=*,labelsep=2mm,start=4]
   \item \textbf{[PETS'25]} \href{https://petsymposium.org/popets/2025/popets-2025-0124.pdf}
-  {Optimal Piecewise-based Mechanism for Collecting Bounded Numerical Data under Local Differential Privacy} | 
-  \normalem\emph{Artifact Award Runner-up}\ULforem \\
+  {Optimal Piecewise-based Mechanism for Collecting Bounded Numerical Data under Local Differential Privacy \topicon{\faFilePdf[regular]}} | 
+  \normalem\emph{\href{https://petsymposium.org/artifact-award.php}{Artifact Award Runner-up}}\ULforem \\
   \uline{Ye Zheng}, Sumita Mishra, and Yidan Hu
   \item \textbf{[PETS'25]} \href{https://arxiv.org/pdf/2505.10349}
-  {Locally Differentially Private Frequency Estimation via Joint Randomized Response} \\
+  {Locally Differentially Private Frequency Estimation via Joint Randomized Response \topicon{\faFilePdf[regular]}} \\
   \uline{Ye Zheng}, Shafizur Rahman Seeam, Yidan Hu, Rui Zhang, and Yanchao Zhang
   \item \textbf{[FSE'22 Demonstrations]} \href{https://dl.acm.org/doi/pdf/10.1145/3540250.3558924}
-  {MpBP: Verifying Robustness of Neural Networks with Multi-path Bound Propagation} \\
+  {MpBP: Verifying Robustness of Neural Networks with Multi-path Bound Propagation \topicon{\faFilePdf[regular]}} \\
   \uline{Ye Zheng}, Jiaxiang Liu, and Xiaomu Shi
   \item \textbf{[JOS'22]} (in Chinese) \href{https://www.jos.org.cn/jos/article/pdf/6585}
-  {Multi-path Back-propagation Method for Neural Network Verification} \\
+  {Multi-path Back-propagation Method for Neural Network Verification \topicon{\faFilePdf[regular]}} \\
   \uline{Ye Zheng}, Xiaomu Shi, and Jiaxiang Liu
   \item \textbf{[CNS'24]} \href{https://ieeexplore.ieee.org/abstract/document/10735696}
-  {Multi-sensor Data Privacy Protection with Adaptive Privacy Budget for IoT Systems} \\
+  {Multi-sensor Data Privacy Protection with Adaptive Privacy Budget for IoT Systems \topicon{\faFilePdf[regular]}} \\
   Xinyi Liu, \uline{Ye Zheng}, Zhengxiong Li, and Yidan Hu
   \item \textbf{[SAS'23]} \href{https://link.springer.com/chapter/10.1007/978-3-031-44245-2_23}
-  {Boosting Multi-neuron Convex Relaxation for Neural Network Verification} \\
+  {Boosting Multi-neuron Convex Relaxation for Neural Network Verification \topicon{\faFilePdf[regular]}} \\
   Xuezhou Tang, \uline{Ye Zheng}, and Jiaxiang Liu
 \end{enumerate}
 
