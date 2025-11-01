@@ -3,7 +3,11 @@
 % Based on Dubasi Pavan Kumar's template, https://www.linkedin.com/in/im-pavankumar/
 % License: MIT
 
-\documentclass[a4paper,11pt]{article}
+%---------------- DOCUMENT CLASS ----------------
+% Use 'letterpaper' for US letter size, 'a4paper' for A4 size
+\documentclass[letterpaper,11pt]{article}
+%---------------- END DOCUMENT CLASS ----------------
+
 
 %---------------- PACKAGES ----------------
 \usepackage[T1]{fontenc}
@@ -24,10 +28,10 @@
 % Page layout
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyfoot[C]{\hspace{3.4cm} \thepage\ / \pageref{LastPage}} % Centered page numbers
+\fancyfoot[C]{\hspace{3.2cm} \thepage\ / \pageref{LastPage}} % Centered page numbers
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=1.6cm, right=1.4cm, bottom=2.8cm}
+\geometry{left=1.4cm, top=1.4cm, right=1.4cm, bottom=2.4cm}
 \setlength{\footskip}{1.2cm} % Space between the bottom of the text and the footer
 % Hyperlink setup (moved after fancyhdr to address warning)
 \usepackage[hidelinks]{hyperref}
@@ -64,12 +68,12 @@
 \begin{center}
     {\Huge\textbf{\scshape Ye Zheng}}
 \end{center}
-\vspace{-1mm}
+\vspace{-2mm}
 
 \begin{center}
   \small{Ph.D. candidate in Computer Science, Rochester Institute of Technology (RIT)}
 \end{center}
-\vspace{-4mm}
+\vspace{-6mm}
 \begin{center}
     \small{\topicon{\faGlobe} \href{https://zhengyeah.com}{zhengyeah.com} | 
     \topicon{\faMailBulk} \href{mailto:zhengye.cn@gmail.com}{zhengye.cn@gmail.com}}
@@ -102,7 +106,7 @@ Over the past five years, my research has spanned formal privacy and formal safe
 \end{itemize}
 
 
-\section{\textbf{Publications} \textnormal{\scriptsize (1st-author then co-author; full list at \href{https://scholar.google.com/citations?hl=en&user=fIwzSr4AAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar})}}
+\section[\textbf{Publications}]{\textbf{Publications} \textnormal{\scriptsize (1st-author then co-author; full list at \href{https://scholar.google.com/citations?hl=en&user=fIwzSr4AAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar})}}
 
 {\scriptsize Preprints:} 
 
@@ -120,7 +124,7 @@ Over the past five years, my research has spanned formal privacy and formal safe
 \begin{enumerate}[leftmargin=*,labelsep=2mm,start=4]
   \item \textbf{[PETS'25]} \href{https://petsymposium.org/popets/2025/popets-2025-0124.pdf}
   {Optimal Piecewise-based Mechanism for Collecting Bounded Numerical Data under Local Differential Privacy \topicon{\faFilePdf[regular]}} | 
-  \normalem {\href{https://petsymposium.org/artifact-award.php}{\emph{Artifact Award Runner-up}}} \ULforem \\
+  \normalem {\href{https://petsymposium.org/artifact-award.php}{\emph{Artifact Award Runner-up}}} \ULforem \\ 
   \uline{Ye Zheng}, Sumita Mishra, and Yidan Hu
   \item \textbf{[PETS'25]} \href{https://arxiv.org/pdf/2505.10349}
   {Locally Differentially Private Frequency Estimation via Joint Randomized Response \topicon{\faFilePdf[regular]}} \\
