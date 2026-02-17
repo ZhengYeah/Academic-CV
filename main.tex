@@ -23,25 +23,21 @@
 %---------------- END PACKAGES ----------------
 
 %---------------- CONFIGURATION ----------------
-% Color definitions
-\definecolor{darkblue}{RGB}{0,0,139}
-% Page layout
-\pagestyle{fancy}
+\definecolor{darkblue}{RGB}{0,0,139} % Color definitions
+\pagestyle{fancy} % Page layout
 \fancyhf{} % clear all header and footer fields
-\fancyfoot[C]{\hspace{3.2cm} \thepage\ / \pageref{LastPage}} % Centered page numbers
+\fancyfoot[C]{\hspace{3.4cm} \thepage\ / \pageref{LastPage}} % Centered page numbers; 3.4cm for letter, 4cm for A4
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=1.4cm, right=1.4cm, bottom=3cm}
-\setlength{\footskip}{1.2cm} % Space between the bottom of the text and the footer
-% Hyperlink setup (moved after fancyhdr to address warning)
-\usepackage[hidelinks]{hyperref}
+\geometry{left=1.4cm, top=1.4cm, right=1.4cm, bottom=2cm} % Suggested margins bottom: 3cm for a4, 2cm for letter
+\setlength{\footskip}{1cm} % Space between the bottom of the text and the footer
+\usepackage[hidelinks]{hyperref} % Hyperlink setup (moved after fancyhdr to address warning)
 \hypersetup{colorlinks=false}
-% URL style
-\urlstyle{same}
+\urlstyle{same} % URL style
 % Text alignment
 \raggedright
 \setlength{\tabcolsep}{0in}
-% Section formatting
+% Section format
 \titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule]
 % List formatting
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -82,8 +78,7 @@
 
 \section{\textbf{Research Experience}}
 
-I focus on the design and analysis of foundational algorithms. 
-Over the past five years, my research has spanned formal privacy and formal safety.
+Over the past five years, I have primarily focused on the design and analysis of foundational algorithms for formal privacy and formal safety.
 
 \section{\textbf{Education}}
 
